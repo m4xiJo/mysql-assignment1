@@ -66,13 +66,13 @@ INSERT INTO Categories (title) VALUES ("Jumpshoes");
 INSERT INTO Categories (title) VALUES ("Flyshoes");
 
 INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Nike", "Jordan", "bluered", 42, 2000, 3);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Colombia", "Jordan", "grey", 41, 200, 2);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Adiddas", "Jordan", "white", 40,  400, 10);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Ecco", "Jordan", "blue", 38, 100, 23);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Nike", "Jordan", "bluered", 26, 1000, 14);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Nike", "Jordan", "bluered", 44, 7020, 6);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Nike", "Jordan", "bluered", 10, 90, 8);
-INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Nike", "Jordan", "bluered", 5, 40, 10);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Colombia", "Island", "grey", 41, 200, 1);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Addidas", "Sport", "white", 40,  400, 10);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Ecco", "Classic", "black", 38, 100, 23);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Timberland", "Spurce", "bluered", 26, 1000, 14);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Solomon", "Elite", "bluered", 44, 7020, 6);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Random", "Shoes", "bluered", 10, 90, 8);
+INSERT INTO Products (make, model, color, size, price, instock) VALUES ("Fake", "Sandals", "bluered", 5, 40, 10);
 
 INSERT INTO CategoriesPerProducts (product_id, category_id) VALUES (1, 4);
 INSERT INTO CategoriesPerProducts (product_id, category_id) VALUES (1, 5);

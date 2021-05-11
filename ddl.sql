@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS Orders;
 DROP TABLE IF EXISTS Products;
 DROP TABLE IF EXISTS Customers;
 DROP TABLE IF EXISTS Categories;
+DROP TABLE IF EXISTS OutOfStock;
 
 CREATE TABLE Customers (
     customer_id INTEGER PRIMARY KEY AUTO_INCREMENT,
@@ -52,6 +53,10 @@ CREATE TABLE CategoriesPerProducts (
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
 
+CREATE TABLE OutOfStock (
+    dateOfIssue TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    product_id INTEGER NOT NULL
+);
 
 INSERT INTO Customers (firstname, lastname, billing_address, passwd) VALUES ("John", "Doe", "22444 Texas US", "user1");
 INSERT INTO Customers (firstname, lastname, billing_address, passwd) VALUES ("Peter", "Quinn", "55675 Mars", "user2");
